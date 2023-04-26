@@ -1,5 +1,6 @@
 package com.codewithray.fullstackbackend.model;
 
+import jakarta.annotation.Nonnull;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -11,6 +12,8 @@ public class User {
     private Long id;
     private String username;
     private String name;
+
+    @Nonnull
     private String email;
 
     public Long getId() {
